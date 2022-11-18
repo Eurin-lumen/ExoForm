@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Le Formulaire</title>
+</head>
+<body>
+    <p class="intro">Exercice sur les formulaires</p>
+    <form action="" method="post">
+        <div class="">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <div id="">
+                    <label for="nom" class="gras"> Nom : </label>
+                    <input type="text" name="nom" id="nom" placeholder="votre nom">
+                </div>
+                <br>
+                <div id="">
+                    <label for="prenom" class="gras"> Prénom : </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="votre prénom">
+                </div>
+                <br>
+                <div id="">
+                    <label for="birth" class="gras"> Date de naissance : </label>
+                    <input type="date" name="birth" id="birth">
+                </div>
+                <br>
+                <div id="">
+                    <label for="email" class="gras"> Mail : </label>
+                    <input type="email" name="email" id="email" placeholder="votre mail">
+                </div>
+                <br>
+                <div id="">
+                    <label for="site" class="gras"> Votre site : </label>
+                    <input type="url" name="site" id="site" placeholder="">
+    
+                </div>
+                <br>
+                <div id="">
+                    <label for="sexe" class="gras"> Genre : </label>
+                    <input type="radio" name="sexe" id="sexe"  value="Homme"><label for="Homme">Homme</label>
+                    <input type="radio" name="sexe" id="sexe" value="Femme"><label for="Femme">Femme</label>
+                </div>
+                <br>
+                <div id="pays">
+                    <label for="pays" class="gras"> Pays : </label>
+                    <select name="pays" id="pays">
+                        <option value="Votre pays">Votre pays</option>
+                        <optgroup label="Afrique">
+                            <option value="Tunis">Tunis</option>
+                            <option value="Algérie">Maroc</option>
+                            <option value="Maroc">Maroc</option>
+                            <option value="Mauritanie">Mauritanie</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="France">France</option>
+                            <option value="Belgique">Belgique</option>
+                            <option value="Italie">Italie</option>
+                            <option value="Allemangne">Allemangne</option>
+                        </optgroup>
+                        <optgroup label="Amérique">
+                            <option value="fr">fr</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Argentine">Argentine</option>
+                        </optgroup>
+                        <optgroup label="Autres">
+                            <option value="Europerope">Europerope</option>
+                            <option value="Asie">Asie</option>
+                            <option value="Amériques">Amériques</option>
+                            <option value="Océanie">Océanie</option>
+    
+                        </optgroup>
+                    </select>
+                </div>
+                <br>
+            </fieldset>
+        </div>
+       <div class="">
+        <fieldset>
+            <legend>Vos formations</legend>
+            <p>
+                <input type="checkbox" name="html5" id="html5"> <label for="">Formation en HTML5</label> <br>
+                <input type="checkbox" name="ccs3" id="css3"> <label for="">Formation en CSS3</label> <br>
+                <input type="checkbox" name="js" id="js"> <label for="">Formation en JS</label> <br>
+                <textarea name="" id="" cols="45" rows="10">Décrivez vos besoins en formation</textarea>
+            </p>
+
+        </fieldset>
+       </div>
+       <div class="">
+        <fieldset>
+            <legend>Envoyez nous votre photo</legend>
+            <input type="file" name="" id=""> <br> <br>
+
+            <input type="reset" value="Effacer" > <input type="submit" value="Envoyez">
+        </fieldset>
+       </div>
+    </form>
+</body>
+</html>
